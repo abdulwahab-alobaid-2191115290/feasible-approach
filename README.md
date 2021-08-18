@@ -9,5 +9,5 @@
 
 this will generate a Makefile that looks like :
 
-	> all:  
+> 	all:  
 		gcc -g -o main main.c
