@@ -1,5 +1,5 @@
 
-# easier-approach
+## easier-approach
 
 ### contents
 * [Makefile-generator](https://github.com/abdulwahab-alobaid-2191115290/easier-approach/tree/main/Makefile_Generator)
