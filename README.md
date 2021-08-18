@@ -9,4 +9,5 @@
 
 this will generate a Makefile that looks like :
 
-	> all:\n\tgcc -g -o main main.c
+	> all:  
+		gcc -g -o main main.c
