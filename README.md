@@ -7,13 +7,13 @@
 
 ##### Makefile-generator  
   
-	self descriptive , the script needs three arguments \<compile mode\> \<file\> \<executable name\>  
-	for example :  
->	./make.pl gcc main.c main  
+self descriptive , the script needs three arguments \<compile mode\> \<file\> \<executable name\>  
+for example :  
+> ./make.pl gcc main.c main  
 
-	this will generate a Makefile that looks like :  
+this will generate a Makefile that looks like :  
   
->	all:  
+> all:  
 	&emsp;&emsp;gcc -g -o main main.c
 
 
