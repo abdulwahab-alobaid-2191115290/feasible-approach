@@ -1,13 +1,12 @@
 # easier-approach
 
-###contents
+### contents
 * [Makefile-generator](https://github.com/abdulwahab-alobaid-2191115290/easier-approach/tree/main/Makefile_Generator )
 
 	self descriptive , the script needs three arguments \<compile mode\> \<file\> \<executable name\>
 	for example :
-> ./make.pl gcc main.c main  
+	> ./make.pl gcc main.c main  
 
 this will generate a Makefile that looks like :
 
-> all:
-	gcc -g -o main main.c
+	> all:\n\tgcc -g -o main main.c
