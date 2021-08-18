@@ -7,7 +7,7 @@
 	for example :
 	> ./make.pl gcc main.c main  
 
-this will generate a Makefile that looks like :
+	this will generate a Makefile that looks like :
 
-> all:  
-> 	gcc -g -o main main.c
+	> all:  
+	 	gcc -g -o main main.c
