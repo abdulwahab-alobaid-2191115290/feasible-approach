@@ -10,4 +10,4 @@
 this will generate a Makefile that looks like :
 
 > all:  
-	> gcc -g -o main main.c
+> 	gcc -g -o main main.c
