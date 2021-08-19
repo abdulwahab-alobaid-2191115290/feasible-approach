@@ -9,14 +9,11 @@
   
 self descriptive , the script needs three arguments \<compile mode\> \<file\> \<executable name\>  
 for example :  
-> ./make.pl gcc main.c main  
+`./make.pl gcc main.c main`  
 
 this will generate a Makefile that looks like :  
   
-> all:  
-	&emsp;&emsp;gcc -g -o main main.c
-
 ```makefile
-gcc -g -o main main.c
+all:
+	gcc -g -o main main.c
 ```
-
