@@ -12,14 +12,14 @@ $file=@ARGV[1];		# file name , ex. main.c
 $exe=@ARGV[2];		# executable name 
 
 if($mode eq "g++"){
-	$command="echo \"all:\n\tg++ -g -o $exe $file\">Makefile";
+	$command="echo \"all:\n\tg++ -g -o $exe $file\nrm:\n\trm Makefile\">Makefile";
 	exec($command);
 	# if mode is g++ set all: target with the debug information and redirect it to the Makefile
 	# did not combine $command & exec because exec does not work with external variables 
 }	
 
 elsif($mode eq "gcc"){
-	$command="echo \"all:\n\tgcc -g -o $exe $file\">Makefile";
+	$command="echo \"all:\n\tgcc -g -o $exe $file\nrm:\n\trm Makefile\">Makefile";
 	exec($command);
 }
 else{
