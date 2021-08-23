@@ -28,5 +28,4 @@ currently supporting :
 
 ##### Contribution  
   
-fork and work , make sure to match my variable naming , in case you needed more variables they have to be self descriptive as much as possible  
-and with good comments in general.
+fork and work , make sure to match my variable naming , in case you needed more variables they have to be self descriptive as much as possible and with good comments in general.
