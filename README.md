@@ -24,3 +24,9 @@ for me I just copied the script to the `/usr/local/bin` so that I can run it any
 currently supporting :
 * C/C++
 * python , with "python3" command
+
+
+##### Contribution  
+  
+fork and work , make sure to match my variable naming , in case you needed more variables they have to be self descriptive as much as possible  
+and with good comments in general.
