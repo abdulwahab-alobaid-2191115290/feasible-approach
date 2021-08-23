@@ -19,4 +19,8 @@ all:
 rm:
 	rm Makefile
 ```
-for me I just copied the script to the `/usr/local/bin` so that I can run it any time I wanted to do a quick program
+for me I just copied the script to the `/usr/local/bin` so that I can run it any time I wanted to do a quick program  
+  
+currently supporting :
+* C/C++
+* python , with "python3" command
