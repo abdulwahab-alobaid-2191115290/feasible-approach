@@ -19,13 +19,14 @@ all:
 rm:
 	rm Makefile
 ```
-for me I just copied the script to the `/usr/local/bin` so that I can run it any time I wanted to do a quick program  
+###### use case/s :  
+* for me I just copied the script to the `/usr/local/bin` so that I can run it any time I wanted to do a quick program  
   
-currently supporting :
+###### currently supporting :
 * C/C++
 * python , with "python3" command
 
 
-##### Contribution  
+##### Contributions  
   
-fork and work , make sure to match my variable naming , in case you needed more variables they have to be self descriptive as much as possible and with good comments in general.
+yes :)
