@@ -7,7 +7,7 @@
 ---
 ##### Makefile-generator  
   
-self descriptive , the script needs three arguments \<compile mode\> \<file\> \<executable name\>  
+self descriptive , the "make.pl" needs three arguments \<compile mode\> \<file\> \<executable name\>  
 for example :  
 `./make.pl gcc main.c main`  
 
@@ -18,7 +18,8 @@ all:
 	gcc -g -o main main.c
 rm:
 	rm Makefile
-```
+```  
+there is also the `setup.pl` which adds or updates the make.pl in `/usr/local/bin/` basically it will remove `make.pl` if exists then copy it from the current directory (which should be `easier-approach/Makefile-generator/`) to the `/usr/local/bin/` , use the `setup.pl` to add or update "make.pl" in the `/usr/local/bin/` directory
 ###### use case/s :  
 * for me I just copied the script to the `/usr/local/bin` so that I can run it any time I wanted to do a quick program  
   
