@@ -20,19 +20,17 @@ $mode=@ARGV[0];		# compile mode , gcc || g++
 $file=@ARGV[1];		# file name , ex. main.c
 $exe=@ARGV[2];		# executable name 
 
-if($mode eq "g++"){
-	$command="echo \"all:\n\t$mode -g -o $exe $file\nrm:\n\trm Makefile\">Makefile";
-	exec($command);
-	# if mode is g++ set "all:" target with the debug information and redirect it to the Makefile
-	# did not combine $command & exec because exec does not work with external variables 
-}	
 
-elsif($mode eq "gcc"){
-	$command="echo \"all:\n\t$mode -g -o $exe $file\nrm:\n\trm Makefile\">Makefile";
-	exec($command);
-}
-else{
+if($mode ne 'gcc' && $mode ne 'g++'){
 	exec('echo "ERROR : invalid first argument , expected \'g++\' or \'gcc\'"');
 	# in case the first argument is not g++ || gcc
 }
+
+$command="echo \"all:\n\t$mode -g -o $exe $file\nrm:\n\trm Makefile\">Makefile";
+exec($command);			
+
+# if mode is g++ || gcc set "all:" target with the debug information and redirect it to the Makefile
+# did not combine $command & exec because exec does not work with external variables 
+
+
 

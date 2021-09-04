@@ -14,3 +14,17 @@ $file='/usr/local/bin/';
 
 # copy  make.pl to $file
 system("sudo cp make.pl $file");
+
+#############################################################################
+
+# set up project.pl
+$file='/usr/local/bin/project.pl';
+
+if(-e $file){	
+	# if the file already exists remove it (to add the new version)
+	system("sudo rm $file");
+}
+
+$file='/usr/local/bin/';
+system("sudo cp project.pl $file");
+
