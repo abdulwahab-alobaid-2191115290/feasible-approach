@@ -6,11 +6,10 @@
 
 ---
 ##### Makefile-generator  
-  
-self descriptive , the "make.pl" needs three arguments \<compile mode\> \<file\> \<executable name\>  
-for example :  
-`./make.pl gcc main.c main`  
 
+* `make.pl` : a script that generates the makefile , args : `<COMPILE MODE> <FILE> <EXE>` OR `<py> <.py file>`  
+for example : `./make.pl gcc main.c main`  
+  
 this will generate a Makefile that looks like :  
   
 ```makefile
@@ -19,15 +18,21 @@ all:
 rm:
 	rm Makefile
 ```  
-there is also the `setup.pl` which adds or updates the make.pl in `/usr/local/bin/` basically it will remove `make.pl` if exists then copy it from the current directory (which should be `easier-approach/Makefile-generator/`) to the `/usr/local/bin/` , use the `setup.pl` to add or update "make.pl" in the `/usr/local/bin/` directory
+---  
+* `project.pl` : a script that takes an additional argument to generate a directory that has the Makefile  
+for example : `./project.pl myproj g++ main.cpp main`  
+which results in `myproj/Makefile`
+---  
+*  `setup.pl` : which adds or updates the make.pl and project.pl in `/usr/local/bin/` basically it will remove `make.pl` if it exists then copy it from the current directory  
+(which should be`easier-approach/Makefile-generator/`) to the `/usr/local/bin/` , use the `setup.pl` to add or update "make.pl" and "project.pl" in the `/usr/local/bin/`   directory
+
 ###### use case/s :  
-* for me I just copied the script to the `/usr/local/bin` so that I can run it any time I wanted to do a quick program  
+* for me I just copied the scripts to the `/usr/local/bin` so that I can run it any time I wanted to do a quick program , I don't recommend doing that for setup.pl
   
 ###### currently supporting :
 * C/C++
-* python , with "python3" command
-
-
+* python , with "python3" command  
+	
 ##### Contributions  
   
 yes :)
