@@ -1,5 +1,5 @@
 
-## easier-approach
+## lazier-approach
 
 ### contents
 * [Makefile-generator](https://github.com/abdulwahab-alobaid-2191115290/lazier-approach/tree/main/Makefile_Generator)
