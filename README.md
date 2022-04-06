@@ -34,4 +34,4 @@ which results in `myproj/Makefile`
 	
 ##### Contributions  
   
-yes :)
+yes 
